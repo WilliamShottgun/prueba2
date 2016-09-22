@@ -10,10 +10,14 @@
 				
 				var suma = 0;
 				for(i=0; i < notas.length; i++) { 
+					if(isNaN(Alumno.nombre)|| !isNaN(Alumno.notas) ){
 					suma = (suma+notas[i]);
 					promedio = suma;
 				   console.log(promedio)   
+					}
+					
 				}
+
 			return (promedio/notas.length);
 
 	}
